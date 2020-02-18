@@ -1,36 +1,32 @@
-
 public class Ejemplo03 {
+	public static void main(String[] args) {
+		Persona persona1 = new Persona();
+		persona1.nombre = "Juan Pérez López";
+		persona1.edad = 34;
+		persona1.estatura = 1.70f;
+		persona1.sexo = 'M';
+		persona1.imprimirDatos();
+		
+		Persona persona2 = new Persona();
+		persona2.nombre = "María Ruíz Fernández";
+		persona2.edad = 25;
+		persona2.estatura = 1.63f;
+		persona2.sexo = 'F';
+		persona2.imprimirDatos();
+	}
+}
 
-  public Ejemplo03() {
-    Alumno alumno1 = new Alumno();
-    alumno1.imprimeDatos();
-  }
-   
-  public static void main(String[] args) {
-    new Ejemplo03();
-  }
-
-  class Alumno extends Persona {
-
-    String matricula = "123456789";
-    int semestre = 2;
-    float promedioGeneral = 8.7f;
-
-    void imprimeDatos() {
-      System.out.println("** Datos del alumno ** \n" + 
-          "Nombre: " + nombre + "\n" +
-          "Edad: " + edad + "\n" +
-          "Estatura: " + estatura + "\n" +
-          "Matricula: " + matricula + "\n" +
-          "Semestre: " + semestre + "\n" +
-          "Promedio General: " + promedioGeneral);
-    }
-    
-  }
-  
-  class Persona {
-    String nombre = "Juan López Delgado";
-    int edad = 20;
-    float estatura = 1.70f;
-  }
+class Persona {
+	String nombre;
+	int edad;
+	float estatura;
+	char sexo;
+	
+	void imprimirDatos() {
+		System.out.println( "Nombre: " + nombre + "\n" +
+							"Edad: " + edad + "\n" +
+							"Estatura: " + estatura + "\n" +
+							"Sexo: " + sexo
+		);
+	}
 }

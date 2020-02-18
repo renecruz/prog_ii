@@ -1,4 +1,6 @@
-public class Ejemplo04 {
+//Ejemplo de como simplificar código usando herencia (extends)
+
+public class Ejemplo06 {
 	public static void main(String[] args) {
 		Persona persona1 = new Persona();
 		persona1.nombre = "Juan Pérez López";
@@ -16,6 +18,15 @@ public class Ejemplo04 {
 		empleado1.turno = 'V';
 		empleado1.sueldo = 8000.0f;
 		empleado1.imprimirDatos();
+		
+		Gerente gerente1 = new Gerente();
+		gerente1.nombre = "Eva Juárez Hernández";
+		gerente1.edad = 45;
+		gerente1.estatura = 1.68f;
+		gerente1.sexo = 'F';
+		gerente1.sucursal = "Chalco";
+		gerente1.sueldo = 15000.0f;
+		gerente1.imprimirDatos();
 	}
 }
 
@@ -34,22 +45,28 @@ class Persona {
 	}
 }
 
-class Empleado {
-	String nombre;
-	int edad;
-	float estatura;
-	char sexo;
+class Empleado extends Persona{	
 	String depto;
 	char turno;
 	float sueldo;
 	
 	void imprimirDatos() {
-		System.out.println( "Nombre: " + nombre + "\n" +
-							"Edad: " + edad + "\n" +
-							"Estatura: " + estatura + "\n" +
-							"Sexo: " + sexo + "\n" + 
-							"Depto: " + depto  + "\n" + 
+		super.imprimirDatos();
+		System.out.println( "Depto: " + depto  + "\n" + 
 							"Turno: " + turno  + "\n" + 
+							"Sueldo: $" + sueldo
+		);
+	}
+}
+
+class Gerente extends Persona{
+	
+	String sucursal;	
+	float sueldo;
+	
+	void imprimirDatos() {
+		super.imprimirDatos();
+		System.out.println( "Sucursal: " + sucursal  + "\n" + 							
 							"Sueldo: $" + sueldo
 		);
 	}
