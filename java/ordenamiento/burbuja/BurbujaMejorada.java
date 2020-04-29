@@ -3,23 +3,20 @@ import java.util.Arrays;
 public class BurbujaMejorada {
 
 	public static void main(String[] args) {
-		int valores[] = new int[]{2,41,563,101,13};		
-		System.out.println("Valores: " + Arrays.toString(valores));
-		int operaciones = 0;	
+		int datos[] = new int[]{8,5,3,9,1};		
+		System.out.println("Arreglo original: " + Arrays.toString(datos));
 		
-		for (int corrida = 0; corrida < valores.length - 1; corrida++) {
-			operaciones++;
-			for (int  indice = 0; indice < valores.length - 1; indice++) {
-				operaciones++;
-				if (valores[indice] > valores[indice + 1]) { // Intercambio
-					int valorTemporal = valores[indice];	
-					valores[indice] = valores[indice + 1];
-					valores[indice + 1] = valorTemporal;
+		for (int recorrido = 0; recorrido < datos.length - 1; recorrido++) {		
+			for (int  indice = 0; indice < datos.length - 1; indice++) {		
+				if (datos[indice] > datos[indice + 1]) { // Intercambio
+					int buffer = datos[indice];	
+					datos[indice] = datos[indice + 1];
+					datos[indice + 1] = buffer;
 				}								
 			}
 		}
 		
-		System.out.println("Valores: " + Arrays.toString(valores));
-		System.out.println("Operaciones realizadas: " + operaciones);
+		System.out.println("Arreglo ordenado: " + Arrays.toString(datos));		
 	}
 }
+
