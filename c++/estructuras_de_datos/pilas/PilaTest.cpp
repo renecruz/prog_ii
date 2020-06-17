@@ -74,7 +74,7 @@ int main(int argc, char const *argv[]) {
 
 /*  Salida en consola: 
 
-		Pila vacía
+    Pila vacía
     Pila: [1,666]
     Pila: [500,1000,1,666]
     Pila: [1000,1,666]
