@@ -4,20 +4,20 @@
 
 using namespace std;
 
-struct Nodo {
-  int dato;
-  Nodo *siguiente;
-  Nodo *anterior;
-};
-
 class Cola {
 
-public:
-  Nodo *cola;
-  Nodo *frente;
-  Cola() {
-    cola = NULL;
-  }
+  struct Nodo {
+    int dato;
+    Nodo *siguiente;
+    Nodo *anterior;
+  };
+
+  public:
+    Nodo *cola;
+    Nodo *frente;
+    Cola() {
+      cola = NULL;
+    }
 
   void push(int dato) {
     cout << "Insertando: " << dato << endl;
@@ -33,7 +33,7 @@ public:
     }
   }
 
-  void pull() {
+  void pop() {
     if (cola != NULL){
       cout << "Quitando: " << frente->dato << endl;
       frente = frente->anterior;
@@ -41,7 +41,7 @@ public:
     }
   }
 
-  void vercola() {
+  void verCola() {
     if (cola != NULL) {
       Nodo *nodoActual = cola;
       cout << "Cola: [";
@@ -55,7 +55,7 @@ public:
     }
   }
 
-  void vaciarcola() {
+  void vaciarCola() {
     cola = NULL;
     cout << "La cola se ha vaciado" << endl;
   }
@@ -63,23 +63,23 @@ public:
 
 int main(int argc, char const *argv[]) {
   Cola cola = Cola();
-  cola.vercola();
+  cola.verCola();
   cola.push(666);
   cola.push(1);
-  cola.vercola();
+  cola.verCola();
   cola.push(1000);
   cola.push(500);
-  cola.vercola();
-  cola.pull();
-  cola.vercola();
-  cola.vaciarcola();
-  cola.vercola();
+  cola.verCola();
+  cola.pop();
+  cola.verCola();
+  cola.vaciarCola();
+  cola.verCola();
   return 0;
 }
 
 /*  Salida en consola: 
 
-    Cola vacía
+		Cola vacía
     Insertando: 666
     Insertando: 1
     Cola: [1,666,]
