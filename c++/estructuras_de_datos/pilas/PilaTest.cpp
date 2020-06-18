@@ -3,19 +3,20 @@
 
 using namespace std;
 
-struct Nodo {
-  int dato;
-  Nodo *nodo;
-};
 
 class Pila {
 
-public:
-  Nodo *pila;
+  struct Nodo {
+    int dato;
+    Nodo *nodo;
+  };
 
-  Pila() {
-    pila = NULL;
-  }
+  public:
+    Nodo *pila;
+
+    Pila() {
+      pila = NULL;
+    }
 
   void push(int dato) {
     cout << "Insertando: " << dato << endl;
@@ -50,7 +51,7 @@ public:
     }
   }
 
-  void vaciarpila() {
+  void vaciarPila() {
     pila = NULL;
     cout << "La Pila se ha vaciado" << endl;
   }
@@ -67,7 +68,7 @@ int main(int argc, char const *argv[]) {
   pila.verPila();
   pila.pop();
   pila.verPila();
-  pila.vaciarpila();
+  pila.vaciarPila();
   pila.verPila();
   return 0;
 }
