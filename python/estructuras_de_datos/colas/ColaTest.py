@@ -20,13 +20,13 @@ class Cola:
             self.cola = nuevoNodo
             self.frente = nuevoNodo
 
-    def pull(self):
+    def pop(self):
         if (self.cola != None):
             print (f"Quitando: {self.frente.dato}")
             self.frente = self.frente.anterior
             self.frente.siguiente = None
 
-    def vercola(self):
+    def verCola(self):
         if (self.cola != None):
             nodoActual = self.cola
             print("Cola: [", end=""),
@@ -37,7 +37,7 @@ class Cola:
         else:
             print("Cola vacía")
 
-    def vaciarcola(self):
+    def vaciarCola(self):
         self.cola = None
         print("La cola se ha vaciado")
 
@@ -45,17 +45,17 @@ class Cola:
 # Uso de la clase cola
 if __name__ == "__main__":
     cola = Cola()
-    cola.vercola()
+    cola.verCola()
     cola.push(666)
     cola.push(1)
-    cola.vercola()
+    cola.verCola()
     cola.push(1000)
     cola.push(500)
-    cola.vercola()
-    cola.pull()
-    cola.vercola()
-    cola.vaciarcola()
-    cola.vercola()
+    cola.verCola()
+    cola.pop()
+    cola.verCola()
+    cola.vaciarCola()
+    cola.verCola()
 
 ''' Salida en consola: 
 
