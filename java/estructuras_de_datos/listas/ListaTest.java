@@ -51,11 +51,6 @@ class ListaSimple {
 			nodoBuscado = nodoBuscado.nodo;
 		}
 
-		/*
-		 * if (fueEncontrado) { System.out.println("El dato " + dato +
-		 * " Si se encuentra en la lista"); } else { System.out.println("El dato " +
-		 * dato + " No se encunetra en la lista"); }
-		 */
 		System.out.println("El dato " + dato + ((fueEncontrado) ? " Si " : " No ") + "se encuentra en la lista");
 
 	}
