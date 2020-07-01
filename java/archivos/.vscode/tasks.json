@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Java Compiler",
+      "type": "shell",
+      "command": "clear;javac",
+      "args": [
+        "${file}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Java Run",
+      "command": "clear;java",
+      "args": [
+        "-cp", "${fileDirname}", "${fileBasenameNoExtension}"
+      ],
+      "dependsOn": [
+        "Java Compiler"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "showReuseMessage": false,
+        "focus": true
+      }
+    }
+  ]
+}
