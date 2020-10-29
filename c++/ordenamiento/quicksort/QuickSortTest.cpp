@@ -40,7 +40,10 @@ int main() {
 	ordenar(datos, 0, n - 1);
 
 	cout << "Arreglo ordenado: [";
-	copy(begin(datos), end(datos), ostream_iterator<int>(cout, ", "));
+	//copy(begin(datos), end(datos), ostream_iterator<int>(cout, ", "));
+	for (int i=0; i<n; i++) {
+		cout << datos[i] << ", ";
+	}
 	cout << "\b\b]" << endl;
 
 	return 0;
