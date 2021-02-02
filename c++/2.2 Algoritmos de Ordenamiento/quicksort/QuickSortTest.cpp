@@ -17,7 +17,6 @@ int ordenarSeccion(int arr[], int indiceIzq, int indiceDer) {
 	int buffer = arr[elemento];
 	arr[elemento] = arr[indiceDer];
 	arr[indiceDer] = buffer;
-
 	return elemento;
 }
 
@@ -40,10 +39,7 @@ int main() {
 	ordenar(datos, 0, n - 1);
 
 	cout << "Arreglo ordenado: [";
-	//copy(begin(datos), end(datos), ostream_iterator<int>(cout, ", "));
-	for (int i=0; i<n; i++) {
-		cout << datos[i] << ", ";
-	}
+	copy(begin(datos), end(datos), ostream_iterator<int>(cout, ", "));
 	cout << "\b\b]" << endl;
 
 	return 0;

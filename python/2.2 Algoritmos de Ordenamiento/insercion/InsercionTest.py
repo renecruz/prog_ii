@@ -12,3 +12,4 @@ for recorrido in range(1, datos.size, 1):
 			datos[indice - 1] = buffer
 
 print ("Arreglo ordenado: " + str(datos))
+

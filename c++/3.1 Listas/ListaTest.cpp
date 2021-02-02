@@ -3,8 +3,7 @@
 
 using namespace std;
 
-struct Nodo
-{
+struct Nodo {
   int dato;
   Nodo *nodo;
 };
@@ -111,25 +110,25 @@ int main(int argc, char const *argv[])
   lista.insertar(500);
   lista.verLista();
   lista.buscar(3);
-  lista.eliminar(500);
-  lista.verLista();
-  lista.vaciarLista();
-  lista.verLista();
+	lista.eliminar(500);
+	lista.verLista();
+	lista.vaciarLista();
+	lista.verLista();
   return 0;
 }
 
 /*  Salida en consola: 
 
-	Lista vacía
-	Insertando: 666
-	Insertando: 1
-	Lista: [1,666]
-	Insertando: 1000
-	Insertando: 500
-	Lista: [1,500,666,1000]
-	El dato 3 No se encuentra en la lista
-	El dato 500 se ha eliminado
-	Lista: [1,666,1000]
-	La lista se ha vaciado
-	Lista vacía
+		Lista vacía
+		Insertando: 666
+		Insertando: 1
+		Lista: [1,666]
+		Insertando: 1000
+		Insertando: 500
+		Lista: [1,500,666,1000]
+		El dato 3 No se encuentra en la lista
+		El dato 500 se ha eliminado
+		Lista: [1,666,1000]
+		La lista se ha vaciado
+		Lista vacía
 */

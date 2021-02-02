@@ -14,3 +14,4 @@ for indiceOrdenar in range(0, datos.size -1, 1):
 		datos[indiceMinimo] = buffer
 
 print ("Arreglo ordenado: " + str(datos))
+

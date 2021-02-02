@@ -79,7 +79,7 @@ int main(int argc, char const *argv[]) {
 
 /*  Salida en consola: 
 
-    Cola vacía
+		Cola vacía
     Insertando: 666
     Insertando: 1
     Cola: [1,666,]

@@ -1,3 +1,5 @@
+#coding=utf-8
+
 def busquedaSecuencial(datos, indiceIzq, indiceDer,  datoBuscado):
 	for indice in range(indiceIzq, indiceDer):
 		if (datos[indice] == datoBuscado): 
