@@ -31,5 +31,3 @@ public class CalculadoraV5Test {
 		System.out.println("La suma de 2.5 + 9.2 es: " +  calculadora.sumar("2.5","9.2", 'd') ); // OK 👍🏼
 	}
 }
-
-//Explicar que se puede sobrecargar un método con más parametros, no solo cambiando el tipo de ellos...

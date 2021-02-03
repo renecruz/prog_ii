@@ -21,8 +21,3 @@ public class CalculadoraV3Test {
     System.out.println("La suma de 2.5 + 9.2 es: " +  calculadora.sumar("2.5","9.2") ); //NumberFormatException 😵
   }
 }
-
-//Explicar que pasa si mandamos decimales como cadena, no hay error de compilación, pero si de ejecución...
-
-// https://bit.ly/2ZYHwpx Intro
-// https://bit.ly/301huBO 1.1 Encapsulamiento

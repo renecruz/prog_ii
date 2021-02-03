@@ -15,5 +15,3 @@ public class CalculadoraV2Test {
     System.out.println("La suma de 3 + 6 es: " +  calculadora.sumar("3","6") ); //Error 😧
   }
 }
-
-//Explicar que pasa si mandamos valores enteros como cadena

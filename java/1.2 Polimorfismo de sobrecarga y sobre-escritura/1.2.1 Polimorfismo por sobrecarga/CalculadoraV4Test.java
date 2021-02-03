@@ -27,5 +27,3 @@ public class CalculadoraV4Test {
     // NumberFormatException: For input string: "2.5" 😵
   }
 }
-
-//Explicar que se puede sobrecargar un método con más parametros, no solo cambiando el tipo de ellos...
