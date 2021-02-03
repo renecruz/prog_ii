@@ -11,5 +11,3 @@ public class CalculadoraV1Test{
     System.out.println("La suma de 2.5 + 9.2 es: " +  calculadora.sumar(2.5,9.2) ); //Error 😧
   }
 } 
-
-//Explicar que pasa si queremos mandar valores decimales
