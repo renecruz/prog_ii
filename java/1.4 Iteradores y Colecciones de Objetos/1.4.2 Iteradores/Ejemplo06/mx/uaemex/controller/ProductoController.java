@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class ProductoController
 {   
-    private Vector<Producto> v = new Vector();
+    private Vector<Producto> v = new Vector<Producto>();
     
     public ProductoController() {
         v.add(new Producto(1,"Tenis","Calzado deportivo en diversas tallas",2000.0f));
