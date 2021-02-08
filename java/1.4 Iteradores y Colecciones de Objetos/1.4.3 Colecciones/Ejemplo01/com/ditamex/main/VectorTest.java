@@ -19,8 +19,7 @@ public class VectorTest
         colores.add("Amarillo");
         colores.add("Negro");
         colores.add("Azul"); 
-        
-        //Explicar el método "toString" de los vectores
+                
         System.out.println("Colores: " + colores);        
         
         //Primer operación "add"
@@ -38,11 +37,5 @@ public class VectorTest
         //Cuarta operación "get"
         String color = (String) colores.get(4);
         System.out.println("Color: " + color);
-
-        /* 
-         * Explicar por que no se debe usar la clase Vector
-         * Ya que no formaba parte de las listas inicialmente
-         * Referir que en la documentación sugiere usar ArrayList
-         */
     }
 }
