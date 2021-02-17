@@ -41,7 +41,7 @@ public class IteratorTest
             }
         }
         
-        System.out.println("- Colores despues de la eliminación -");
+        System.out.println("- Colores después de la eliminación -");
         for (String color: colores) {
             System.out.println(color);
         }
