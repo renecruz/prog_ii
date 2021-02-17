@@ -1,4 +1,3 @@
-// https://www.geeksforgeeks.org/comparator-class-in-c-with-examples/
 #include <iostream>
 #include <list>
 
