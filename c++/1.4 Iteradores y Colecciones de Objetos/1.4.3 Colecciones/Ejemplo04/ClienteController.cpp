@@ -1,6 +1,5 @@
 #include <iostream>
 #include <list>
-
 #include "Cliente.h"
 
 using namespace std;
