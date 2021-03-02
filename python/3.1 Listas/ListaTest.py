@@ -4,10 +4,6 @@ class Nodo:
         self.dato = dato
         self.nodo = nodo
 
-    def toString(self):
-        return (f"Dato: {dato}, Nodo -> {nodo}")
-
-
 class ListaSimple:
     lista = None
 
